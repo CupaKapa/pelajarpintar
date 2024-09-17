@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pilihan Seni dan Budaya</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Menggunakan styles.css yang sama untuk konsistensi desain -->
+    <style>
+        /* Tambahan CSS khusus untuk halaman seni.html */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background: #f0f0f0;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .choice-card {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            width: 100%;
+            max-width: 400px;
+            margin: 10px 0;
+            overflow: hidden;
+            transition: transform 0.3s, box-shadow 0.3s;
+            text-align: center;
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .choice-card img {
+            width: 100%;
+            height: auto;
+        }
+
+        .choice-card h3 {
+            margin: 15px 0;
+            font-size: 1.2em;
+        }
+
+        .choice-card p {
+            padding: 0 15px;
+            font-size: 1em;
+            color: #555;
+        }
+
+        .choice-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+        }
+
+        @media only screen and (max-width: 480px) {
+            .choice-card h3 {
+                font-size: 1em;
+            }
+
+            .choice-card p {
+                font-size: 0.9em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="https://chatgpt.com/" class="choice-card">
+            <img src="pic.im.f/ask.jpeg" alt="Bertanya Seni">
+            <h3>Bertanya Seputar Seni dan Budaya</h3>
+            <p>Temukan jawaban atas semua pertanyaan mengenai seni dan budaya dari berbagai belahan dunia.</p>
+        </a>
+        
+        <a href="https://www.bing.com/images/create/" class="choice-card">
+            <img src="pic.im.f/img.jpg" alt="Membuat Gambar">
+            <h3>Membuat Gambar</h3>
+            <p>Jelajahi panduan dan tutorial untuk membuat gambar dan karya seni visual.</p>
+        </a>
+        
+        <a href="https://suno.com/" class="choice-card">
+            <img src="pic.im.f/song.jpeg" alt="Membuat Lagu">
+            <h3>Membuat Lagu</h3>
+            <p>Pelajari cara membuat dan menyusun lagu dengan berbagai genre dan gaya musik.</p>
+        </a>
+        
+        <a href="https://www.fotor.com/apps/ai-video-generator/" class="choice-card">
+            <img src="pic.im.f/vid.jpeg" alt="Membuat Video">
+            <h3>Membuat Video</h3>
+            <p>Ikuti tutorial dan tips untuk membuat video berkualitas tinggi, dari konsep hingga editing.</p>
+        </a>
+        
+        <a href="https://smodin.io/id/penulis/naskah-cerita" class="choice-card">
+            <img src="pic.im.f/lis.jpeg" alt="Membuat Cerita">
+            <h3>Membuat Cerita</h3>
+            <p>Temukan panduan untuk menulis dan membuat cerita yang menarik dan kreatif.</p>
+        </a>
+    </div>
+</body>
+</html>

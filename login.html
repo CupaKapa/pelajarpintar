@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="a21c8.css">
+</head>
+<body>
+    <div class="login-container">
+        <div class="login-box">
+            <h2>Login</h2>
+            <p>Welcome! Please login to continue.</p>
+            <form id="loginForm">
+                <div class="input-group">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" placeholder="Enter your username" required>
+                </div>
+                <div class="input-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="Enter your password" required>
+                </div>
+                <button type="submit" class="btn">Login</button>
+            </form>
+            <div class="additional-links">
+                <a href="#">Belum daftar atau lupa password? Klik di sini!</a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Daftar pengguna
+        const users = [
+            { username: 'admin', password: 'ikusandesu'},
+            { username: 'gofudz', password: 'Bazay715' },
+            { username: 'michele', password: 'anang' },
+            { username: 'lutfy', password: 'lutfy'},
+            { username: 'lulu', password: 'agan' },
+            { username: 'user6', password: '}>!#' },
+            { username: 'user7', password: ')!#&^' },
+            { username: 'user8', password: '}{>>:}' },
+            { username: 'user9', password: '^@!*()' },
+            { username: 'user10', password: ')!*(@)' },
+            { username: 'user11', password: '#%^!' },
+            { username: 'user12', password: '$*@!*' },
+            { username: 'user13', password: '#!%^' },
+            { username: 'user14', password: '!)(@)' },
+            { username: 'user15', password: '*(@!#)' },
+            { username: 'user16', password: '#$$^@#' },
+            { username: 'user17', password: '$(!&)' },
+            { username: 'user18', password: '#*@!#' },
+            { username: 'user19', password: '$)(*&!)' },
+            { username: 'user20', password: '!(#$&!())' },
+            { username: 'user21', password: '!!)!(*)' },
+            { username: 'user22', password: '!(*#^@)' },
+            { username: 'user23', password: '!)(#(#^))' },
+            { username: 'user24', password: '!#(*!@^)' },
+            { username: 'user25', password: ')@*&$^' }
+        ];
+
+        document.getElementById("loginForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+
+            // Ambil nilai username dan password
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+
+            // Verifikasi login dengan mencari kecocokan di daftar pengguna
+            const user = users.find(user => user.username === username && user.password === password);
+
+            if (user) {
+                // Simpan informasi login di sessionStorage
+                sessionStorage.setItem('loggedIn', 'true');
+                sessionStorage.setItem('username', user.username);
+
+                // Arahkan ke halaman utama setelah login berhasil
+                window.location.href = 'index.html';
+            } else {
+                alert('Username atau password salah!');
+            }
+        });
+    </script>
+</body>
+</html>

@@ -193,3 +193,43 @@ footer {
         margin: 10px 0; /* Jarak vertikal antar kartu */
     }
 }
+
+@media only screen and (max-width: 720px) {
+    header {
+        flex-direction: row; /* Membuat header tetap horizontal di perangkat kecil */
+        padding: 5px 10px;
+        height: 45px; /* Mengurangi tinggi header untuk perangkat mobile */
+    }
+
+    .logo {
+        font-size: 1em; /* Ukuran logo lebih kecil untuk mobile */
+    }
+
+    nav a {
+        padding: 6px 8px; /* Mengurangi padding pada item menu */
+        font-size: 0.8em; /* Ukuran teks lebih kecil untuk mobile */
+    }
+
+    .hero-content h1 {
+        font-size: 1.8em; /* Ukuran teks hero lebih kecil untuk mobile */
+    }
+
+    .hero-content p {
+        font-size: 1em; /* Ukuran teks hero lebih kecil untuk mobile */
+    }
+
+    .cta-btn {
+        font-size: 1em; /* Ukuran tombol lebih kecil untuk mobile */
+    }
+
+    .additional-services {
+        justify-content: space-around; /* Rata tengah dengan ruang di sekitar */
+    }
+
+    .service-card {
+        height: 250px; /* Tinggi tetap untuk mobile */
+        width: 250px; /* Lebar penuh untuk mobile */
+        max-width: 250px; /* Maksimal lebar agar tetap konsisten */
+        margin: 10px 0; /* Jarak vertikal antar kartu */
+    }
+}

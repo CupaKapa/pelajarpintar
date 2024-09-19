@@ -111,11 +111,15 @@ section h2 {
 /* Card Styling */
 .service-card {
     background: linear-gradient(135deg, #004992, #ffcd6f); /* Gradient background */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     border-radius: 10px; /* Rounded corners */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for depth */
     padding: 20px;
     margin: 10px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
     text-align: center;
     position: relative;
 }
@@ -135,6 +139,7 @@ section h2 {
 .service-card p {
     color: #ffffff; /* Slightly lighter text color for paragraphs */
     font-size: 0.9em;
+    text-decoration: none;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 

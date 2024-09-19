@@ -114,14 +114,15 @@ section h2 {
     background: linear-gradient(135deg, #004992, #ffcd6f); /* Gradient background */
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-between; /* Ruang antara isi dalam kartu */
     border-radius: 15px; /* Sudut yang lebih membulat */
     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3); /* Bayangan lebih dalam */
     padding: 20px;
-    margin: 10px;
+    width: 250px; /* Lebar tetap untuk konsistensi */
+    height: 300px; /* Tinggi tetap untuk konsistensi */
+    margin: 10px; /* Jarak antar kartu */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     text-align: center;
-    height: 100px; /* Tinggi tetap untuk konsistensi */
 }
 
 .service-card:hover {

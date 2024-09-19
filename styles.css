@@ -55,6 +55,11 @@ nav a:hover {
     border-radius: 5px;
 }
 
+nav a, .service-card a {
+    color: #fff; /* Warna teks link */
+    text-decoration: none; /* Menghapus garis bawah */
+}
+
 /* Hero Section */
 .hero {
     background: url('pic.im.f/bg.jpg') no-repeat center center/cover;

@@ -121,7 +121,7 @@ section h2 {
     margin: 10px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     text-align: center;
-    height: 300px; /* Tinggi tetap untuk konsistensi */
+    height: 100px; /* Tinggi tetap untuk konsistensi */
 }
 
 .service-card:hover {
@@ -182,7 +182,14 @@ footer {
         font-size: 1em; /* Ukuran tombol lebih kecil untuk mobile */
     }
 
+    .additional-services {
+        justify-content: space-around; /* Rata tengah dengan ruang di sekitar */
+    }
+
     .service-card {
-        height: auto; /* Biarkan tinggi kartu otomatis untuk perangkat kecil */
+        height: 250px; /* Tinggi tetap untuk mobile */
+        width: 100%; /* Lebar penuh untuk mobile */
+        max-width: 250px; /* Maksimal lebar agar tetap konsisten */
+        margin: 10px 0; /* Jarak vertikal antar kartu */
     }
 }

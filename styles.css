@@ -188,7 +188,7 @@ footer {
 
     .service-card {
         height: 250px; /* Tinggi tetap untuk mobile */
-        width: 100%; /* Lebar penuh untuk mobile */
+        width: 250px; /* Lebar penuh untuk mobile */
         max-width: 250px; /* Maksimal lebar agar tetap konsisten */
         margin: 10px 0; /* Jarak vertikal antar kartu */
     }

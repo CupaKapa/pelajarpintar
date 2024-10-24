@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pilihan Pembayaran Berlangganan</title>
+    <style>
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #1c1c1c, #4e4e4e);
+            color: #ffffff;
+            text-align: center;
+            overflow-x: hidden; /* Mencegah scroll horizontal */
+        }
+
+        h1 {
+            margin: 30px 0; /* Ruang di atas dan bawah */
+            font-size: 3rem;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+        }
+
+        .card-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+            padding-bottom: 50px; /* Ruang tambahan untuk memastikan tidak terpotong */
+        }
+
+        .card {
+            background-color: rgba(0, 0, 0, 0.9);
+            border-radius: 10px;
+            padding: 20px;
+            width: 90%;
+            max-width: 300px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+            transition: transform 0.3s, box-shadow 0.3s;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.7);
+        }
+
+        .cta-btn {
+            background-color: #d9534f; /* Warna tombol */
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            display: inline-block;
+            transition: background-color 0.3s;
+            font-size: 1.1rem;
+            margin-top: 10px;
+        }
+
+        .cta-btn:hover {
+            background-color: #c9302c; /* Warna saat hover */
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        li {
+            margin: 5px 0;
+        }
+
+        .code-input {
+            margin-top: 15px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .code-input input {
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            margin-right: 10px;
+            width: 150px;
+        }
+
+        .code-input button {
+            background-color: #f0ad4e; /* Warna tombol untuk masukkan kode */
+            padding: 10px 20px;
+            border-radius: 5px;
+            color: white;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .code-input button:hover {
+            background-color: #ec971f; /* Warna saat hover */
+        }
+    </style>
+</head>
+<body>
+    <h1>Pilih Paket Berlangganan</h1>
+
+    <div class="card-container">
+        <div class="card">
+            <h2>Paket Basic</h2>
+            <p>Harga: Rp10.000</p>
+            <ul>
+                <li>Akses dasar</li>
+                <li>1 user</li>
+                <li>Jawaban instan</li>
+                <li>Dukungan pelanggan terbatas</li>
+            </ul>
+            <a href="https://wa.me/085172208511?text=Saya%20ingin%20berlangganan%20Paket%20Basic" class="cta-btn">Berlangganan</a>
+        </div>
+
+        <div class="card">
+            <h2>Paket Premium</h2>
+            <p>Harga: Rp25.000</p>
+            <ul>
+                <li>Akses penuh</li>
+                <li>2 user</li>
+                <li>Jawaban prioritas</li>
+                <li>Dukungan pelanggan 24/7</li>
+            </ul>
+            <a href="https://wa.me/085172208511?text=Saya%20ingin%20berlangganan%20Paket%20Premium" class="cta-btn">Berlangganan</a>
+        </div>
+
+        <div class="card">
+            <h2>Paket Pro</h2>
+            <p>Harga: Rp50.000</p>
+            <ul>
+                <li>Akses lengkap dan fitur eksklusif</li>
+                <li>3 user</li>
+                <li>Pembaharuan otomatis</li>
+                <li>Konsultasi personal</li>
+            </ul>
+            <a href="https://wa.me/085172208511?text=Saya%20ingin%20berlangganan%20Paket%20Pro" class="cta-btn">Berlangganan</a>
+        </div>
+
+        <div class="card">
+            <h2>Paket Undangan Eksklusif</h2>
+            <p>Hanya pengguna kode khusus</p>
+            <ul>
+                <li>Akses khusus acara eksklusif</li>
+                <li>Konten premium terbatas</li>
+                <li>Networking dengan pakar industri</li>
+            </ul>
+            <div class="code-input">
+                <input type="text" id="invitationCode" placeholder="Masukkan Kode" required>
+                <button onclick="checkCode()">Masukkan</button> <!-- Menggunakan <button> untuk fungsi masukkan kode -->
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function checkCode() {
+            const codeInput = document.getElementById('invitationCode').value;
+            const validCodes = ['EXCLUSIVE2024', 'INVITE123', 'PROMOABC'];
+
+            if (validCodes.includes(codeInput)) {
+                window.location.href = "nns.html"; // Arahkan ke WhatsApp
+            } else {
+                alert('Kode akses tidak valid! Silakan coba lagi.');
+            }
+        }
+    </script>
+</body>
+</html>

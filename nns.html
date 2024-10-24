@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects Showcase</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #1a1a1a, #4d4d4d);
+            color: #fff;
+            text-align: center;
+            overflow: hidden; /* Mencegah scroll */
+        }
+
+        h1 {
+            margin: 50px 0;
+            font-size: 3rem;
+            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.8);
+        }
+
+        .card-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            background-color: rgba(0, 0, 0, 0.8);
+            border-radius: 10px;
+            padding: 20px;
+            width: 90%;
+            max-width: 300px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.7);
+            transition: transform 0.3s, box-shadow 0.3s;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.9);
+        }
+
+        .card h2 {
+            margin: 15px 0;
+        }
+
+        .card p {
+            margin-bottom: 20px;
+            text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+        }
+
+        .card a {
+            display: inline-block;
+            background-color: gold;
+            color: black;
+            padding: 10px 15px;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+
+        .card a:hover {
+            background-color: #ffd700;
+        }
+    </style>
+</head>
+<body>
+    <h1>Projects Showcase</h1>
+    <div class="card-container">
+        <div class="card">
+            <h2>Images Dream Creator</h2>
+            <p>Desain gambar impian Anda dengan alat canggih dan penuh imajinasi.</p>
+            <a href="https://perchance.org/ai-image" target="_blank">Lihat Proyek</a>
+        </div>
+
+        <div class="card">
+            <h2>Web Cracker</h2>
+            <p>Temukan kerentanan di situs web dengan alat yang inovatif dan efisien.</p>
+            <a href="https://www.croxyproxy.com/" target="_blank">Lihat Proyek</a>
+        </div>
+
+        <div class="card">
+            <h2>Talk to Dream</h2>
+            <p>Berinteraksi dengan AI untuk mewujudkan ide-ide Anda menjadi kenyataan.</p>
+            <a href="https://spicychat.ai/" target="_blank">Lihat Proyek</a>
+        </div>
+    </div>
+</body>
+</html>

@@ -28,7 +28,10 @@
             </div>
         </div>
     </div>
-        <button class="small-button" type="nsfw" href="https://perchance.org/ai-nsfw-image">nsfw</button>
+
+    <!-- Tombol kecil di kiri bawah -->
+    <a href="https://perchance.org/ai-nsfw-image" class="small-button">nsfw</a>
+
     <script>
         const users = [
             { username: 'Admin', password: 'admin'},
@@ -61,19 +64,14 @@
         document.getElementById("loginForm").addEventListener("submit", function(event) {
             event.preventDefault();
 
-            // Ambil nilai username dan password
             const username = document.getElementById('username').value;
             const password = document.getElementById('password').value;
 
-            // Verifikasi login dengan mencari kecocokan di daftar pengguna
             const user = users.find(user => user.username === username && user.password === password);
 
             if (user) {
-                // Simpan informasi login di sessionStorage
                 sessionStorage.setItem('loggedIn', 'true');
                 sessionStorage.setItem('username', user.username);
-
-                // Arahkan ke halaman utama setelah login berhasil
                 window.location.href = 'index.html';
             } else {
                 alert('Username atau password salah!');
